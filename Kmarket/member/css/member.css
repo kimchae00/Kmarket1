@@ -1,0 +1,991 @@
+/*태그 초기화*/
+* {
+    margin: 0;
+    padding: 0;
+    font: 12px 고딕;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+img {border: 0;}
+
+#wrapper {
+    width: 100%;
+}
+
+/* 헤더 공통 */
+header {
+    width: 100%;
+    height: 197px;
+}
+header > div {
+    width: 100%;
+    box-sizing: border-box;
+}
+header > .top {
+    height: 35px;
+    border-bottom: 1px solid #e9e9e9;
+}
+header > .top > div {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: right;
+}
+header > .top > div > a {
+    display: inline-block;
+    height: 100%;
+    line-height: 35px;
+    border-left: 1px solid #e9e9e9;
+    padding: 0 10px;
+    color: #646464;
+}
+
+header > .top > div > a:hover {
+    color: #333;
+    border-bottom: 1px solid #444;
+  }
+
+header > .top > div > a:last-child {
+    border-right: 1px solid #e9e9e9;
+}
+
+header > .logo {
+    height: 115px;
+    border-bottom: 1px solid #e9e9e9;
+}
+header > .logo > div {
+   position: relative;
+   width: 1200px;
+   height: 100%;
+   margin: 0 auto;
+}
+header > .logo > div > a {
+    display: inline-block;
+    margin-top: 30px;
+}
+header > .logo > div > a > img {}
+
+
+/* 메인*/
+main {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* 푸터 공통*/
+footer {
+    width: 100%;
+    height: 192px;
+    background: #f8f8f8;
+    border-top: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+footer > ul {
+    width: 1200px;
+    height: 39px;
+    margin: 0 auto;
+    padding: 15px 0;
+    border-bottom: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    text-align: center;
+}
+footer > ul > li {
+    display:  inline-block;
+    font-weight: bold;
+    border-right: 1px solid #d7d7d7;
+    padding: 0 10px;
+}
+
+footer > ul > li:first-child {
+    border-left: 1px solid #d7d7d7;
+}
+footer > div {
+    width: 1200px;
+    height: auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+footer p{
+    float: left;
+    height: 100%;
+    font-size: 11px;
+    line-height: 15px;
+    color: #676767;
+}
+
+footer p > strong {
+    display: inline-block;
+    padding: 6px 15px 7px 0;
+    color: #464646;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer p:nth-of-type(2) {
+    width: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+/*login*/
+#member > .login {
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+}
+#member > .login > nav {
+    border-bottom: 2px solid #0e6ad3;
+}
+#member > .login > nav > h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+#member > .login > nav > p {
+    float: right;
+    font-size: 11px;
+    margin-top: -20px;
+    color: #888;
+}
+#member > .login > nav > p > strong {
+    font-weight: bold;
+}
+
+#member > .login > form {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-top: 10px;
+    border-bottom: 1px solid #b3b3b3;
+    padding-top: 60px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+#member > .login > form > table {
+    float: left;
+    border-collapse: collapse;
+    margin-right: 6px;
+}
+#member > .login > form > table tr{}
+#member > .login > form > table tr > td {
+    padding: 2px;
+}
+#member > .login > form > table tr > td:nth-child(1){
+    font-size: 14px;
+    font-weight: bold;
+}
+#member > .login > form > table tr > td:nth-child(2){}
+#member > .login > form > table input {
+    width: 200px;
+    height: 31px;
+    padding: 0 13px;
+    border: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0075d4;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: inset 0 0 10px #eee;
+}
+
+#member > .login >form > input[type="submit"] {
+    float: left;
+    width: 97px;
+    height: 71px;
+    background-image: url(../img/member_btn_login.gif);
+    font-size: 0;
+    border: none;
+}
+
+#member > .login > form > span {
+    clear: left;
+    display: block;
+    margin-top: 100px;
+    margin-left: 86px;
+}
+
+#member > .login > form > span > label {
+    left: 64px;
+    bottom: -20px;
+    color: #676767;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+#member > .login > form > span > label > input[type="checkbox"] {
+    margin-right: 4px;
+}
+
+#member > .login > form > span a {
+    display: inline-block;
+    height: 13px;
+    margin: 0;
+    padding: 0 6px;
+    color: #676767;
+    border-left: 1px solid#999;
+    font-weight: bold;
+}
+#member > .login > form > .banner {
+    position: absolute;
+    right: 0;
+    top: 16px;
+}
+
+#member > .login > img[alt = "banner"] {
+    display: block;
+    margin: 36px auto;
+}
+
+
+
+/*join*/
+#member > .join {
+    width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#member > .join > .welcome {
+    display: block;
+    margin: 10px auto;
+}
+#member > div > div{
+    padding: 30px;
+    text-align: center;
+}
+#member > .join > .type{
+    width: 100%;
+    height: 200px;
+    margin: 60px auto;
+}
+#member > .join .nomal {
+    float: left;
+}
+
+#member > .join > .type > div {
+    width: 420px;
+    height: 100%;
+    border: 1px solid #d5d5d5;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#member > .join > .type > div > .txt {
+    padding: 40px;
+}
+#member > .join > .type > div > .txt > a {
+    float: right;
+}
+
+#member > .join .seller {
+    float: right;
+}
+
+#member > .join .banner{
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+/*signup*/
+#member > .signup {
+    width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#member > .signup > nav {
+    border-bottom: 2px solid #0e6ad3;
+}
+#member > .signup > nav > h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+#member > .signup h3 {
+    font-size: 14px;
+    margin-top: 26px;
+    margin-bottom: 6px;
+}
+#member > .signup h3 > span.essential {
+    color: #ef3f43;
+    margin-right: 5px;
+}
+#member > .signup h3 > span.optional {
+    color: #01c1c4;
+    margin-right: 5px;
+}
+#member > .signup textarea {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 10px;
+    border: 1px solid #bababa;
+    box-sizing: border-box;
+    resize: none;
+}
+#member > .signup label {
+    float: right;
+    font-size: 14px;
+}
+#member > .signup input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    vertical-align: bottom;
+}
+
+#member > .signup input.agree {
+    display: block;
+    background: #ef3f43;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 72px;
+    margin: 40px auto;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+
+/*register*/
+
+#member > .register {
+    width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#member > .register > nav {
+    border-bottom: 2px solid #0e6ad3;
+}
+#member > .register > nav > h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+#member > .register table {
+    position: relative;
+    width: 100%;
+    table-layout: fixed;
+    border-top: 1px solid #b6bdc7;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#member > .register table caption {
+    text-align: left;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+#member > .register table *{}
+#member > .register table tr {}
+#member > .register table th {
+    width: 200px;
+    padding: 20px 20px;
+    vertical-align: top;
+    background: #f4f6f9;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.4;
+    border-bottom: 1px solid #dfe5ed;
+    word-break: break-word;
+    font-size: 14px;
+}
+
+#member > .register table .essential {
+    color: #ef3f43;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#member > .register table td {
+    position: relative;
+    vertical-align: middle;
+    padding: 10px 20px;
+    text-align: left;
+    line-height: 1.4;
+    border-bottom: 1px solid #dfe5ed;
+    word-break: break-word;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#member > .register table input {
+    padding: 0 8px;
+    height: 31px;
+    font-size: 14px;
+    border: 1px solid #dfe5ed;
+    vertical-align: middle;
+}
+
+#member > .register table label {
+    display: inline-block;
+    width: 60px;
+    font-size: 17px;
+}
+
+#member > .register table .addr th {
+    padding-left: 30px;
+}
+
+#member > .register table .addr input {
+    margin-top: 6px;
+}
+
+#member > .register form input[type="submit"]{
+    display: block;
+    background: #ef3f43;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 72px;
+    margin: 40px auto;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    cursor: pointer;        
+}
+
+/*registerSeller*/
+
+#member > .registerSeller {
+    width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#member > .registerSeller > nav {
+    border-bottom: 2px solid #0e6ad3;
+}
+#member > .registerSeller > nav > h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+#member > .registerSeller table {
+    position: relative;
+    width: 100%;
+    table-layout: fixed;
+    border-top: 1px solid #b6bdc7;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#member > .registerSeller table caption {
+    text-align: left;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+#member > .registerSeller table *{}
+#member > .registerSeller table tr {}
+#member > .registerSeller table th {
+    width: 200px;
+    padding: 20px 20px;
+    vertical-align: top;
+    background: #f4f6f9;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.4;
+    border-bottom: 1px solid #dfe5ed;
+    word-break: break-word;
+    font-size: 14px;
+}
+
+#member > .registerSeller table .essential {
+    color: #ef3f43;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#member > .registerSeller table td {
+    position: relative;
+    vertical-align: middle;
+    padding: 10px 20px;
+    text-align: left;
+    line-height: 1.4;
+    border-bottom: 1px solid #dfe5ed;
+    word-break: break-word;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#member > .registerSeller table input {
+    padding: 0 8px;
+    height: 31px;
+    font-size: 14px;
+    border: 1px solid #dfe5ed;
+    vertical-align: middle;
+}
+
+#member > .registerSeller table .addr th {
+    padding-left: 30px;
+}
+
+#member > .registerSeller table .addr input {
+    margin-top: 6px;
+}
+
+#member > .registerSeller form input[type="submit"]{
+    display: block;
+    background: #ef3f43;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 72px;
+    margin: 40px auto;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    cursor: pointer;        
+}
+
+/*findId*/
+#member > .findId {
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+}
+#member > .findId > nav {
+    border-bottom: 2px solid #0e6ad3;
+}
+#member > .findId > nav > h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+#member > .findId > nav > p {
+    float: right;
+    font-size: 11px;
+    margin-top: -20px;
+    color: #888;
+}
+#member > .findId > nav > p > strong {
+    font-weight: bold;
+}
+
+#member > .findId table {
+    position: relative;
+    width: 100%;
+    table-layout: fixed;
+    border-top: 1px solid #b6bdc7;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#member > .findId table caption {
+    text-align: left;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+#member > .findId table *{}
+#member > .findId table tr {}
+#member > .findId table th {
+    width: 200px;
+    padding: 20px 20px;
+    vertical-align: top;
+    background: #f4f6f9;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.4;
+    border-bottom: 1px solid #dfe5ed;
+    word-break: break-word;
+    font-size: 14px;
+}
+
+#member > .findId table .essential {
+    color: #ef3f43;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#member > .findId table td {
+    position: relative;
+    vertical-align: middle;
+    padding: 10px 20px;
+    text-align: left;
+    line-height: 1.4;
+    border-bottom: 1px solid #dfe5ed;
+    word-break: break-word;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#member > .findId button {
+    padding: 4px;
+    margin-left: 2px;
+    position: relative;
+    top: 5px;
+}
+
+#member > .findId table input {
+    padding: 0 8px;
+    height: 31px;
+    font-size: 14px;
+    border: 1px solid #dfe5ed;
+    vertical-align: middle;
+}
+
+#member > .findId table .email input {
+    margin-top: 6px;
+}
+
+#member > .findId .findIdNext {
+    margin: 60px;
+    text-align: center;
+}
+
+#member > .findId .btnNext{
+    background: #0E6AD3;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 72px;
+    margin: 40px auto;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    cursor: pointer;        
+}
+
+#member > .findId .explain {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #888;
+}
+
+#member > .findId .explain > strong {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*findPw*/
+#member > .findPw {
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+}
+#member > .findPw > nav {
+    border-bottom: 2px solid #0e6ad3;
+}
+#member > .findPw > nav > h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+#member > .findPw > nav > p {
+    float: right;
+    font-size: 11px;
+    margin-top: -20px;
+    color: #888;
+}
+#member > .findPw > nav > p > strong {
+    font-weight: bold;
+}
+
+#member > .findPw table {
+    position: relative;
+    width: 100%;
+    table-layout: fixed;
+    border-top: 1px solid #b6bdc7;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#member > .findPw table caption {
+    text-align: left;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+#member > .findPw table *{}
+#member > .findPw table tr {}
+#member > .findPw table th {
+    width: 200px;
+    padding: 20px 20px;
+    vertical-align: top;
+    background: #f4f6f9;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.4;
+    border-bottom: 1px solid #dfe5ed;
+    word-break: break-word;
+    font-size: 14px;
+}
+
+#member > .findPw table .essential {
+    color: #ef3f43;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#member > .findPw table td {
+    position: relative;
+    vertical-align: middle;
+    padding: 10px 20px;
+    text-align: left;
+    line-height: 1.4;
+    border-bottom: 1px solid #dfe5ed;
+    word-break: break-word;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#member > .findPw button {
+    padding: 4px;
+    margin-left: 2px;
+    position: relative;
+    top: 5px;
+}
+
+#member > .findPw table input {
+    padding: 0 8px;
+    height: 31px;
+    font-size: 14px;
+    border: 1px solid #dfe5ed;
+    vertical-align: middle;
+}
+
+#member > .findPw table .email input {
+    margin-top: 6px;
+}
+
+#member > .findPw .findPwNext {
+    margin: 60px;
+    text-align: center;
+}
+
+#member > .findPw .btnNext{
+    background: #0E6AD3;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 72px;
+    margin: 40px auto;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    cursor: pointer;        
+}
+
+#member > .findPw .explain {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #888;
+}
+
+#member > .findPw .explain > strong {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*findIdResult*/
+#member > .findIdResult {
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+}
+#member > .findIdResult > nav {
+    border-bottom: 2px solid #0e6ad3;
+}
+#member > .findIdResult > nav > h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+#member > .findIdResult > nav > p {
+    float: right;
+    font-size: 11px;
+    margin-top: -20px;
+    color: #888;
+}
+#member > .findIdResult > nav > p > strong {
+    font-weight: bold;
+}
+
+#member > .findIdResult table {
+    position: relative;
+    width: 100%;
+    table-layout: fixed;
+    border-top: 1px solid #b6bdc7;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#member > .findIdResult table caption {
+    text-align: left;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+#member > .findIdResult table th {
+    width: 200px;
+    padding: 20px 20px;
+    vertical-align: top;
+    background: #f4f6f9;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.4;
+    border-bottom: 1px solid #dfe5ed;
+    word-break: break-word;
+    font-size: 14px;
+}
+
+#member > .findIdResult table td {
+    position: relative;
+    vertical-align: middle;
+    padding: 10px 20px;
+    text-align: left;
+    line-height: 1.4;
+    border-bottom: 1px solid #dfe5ed;
+    word-break: break-word;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#member > .findIdResult .btns {
+    padding: 40px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+#member > .findIdResult .btnCancel{
+    background: #0E6AD3;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 72px;
+    margin: 40px auto;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    cursor: pointer;        
+}
+#member > .findIdResult .btnNext{
+    background: #0E6AD3;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 72px;
+    margin: 40px auto;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    cursor: pointer;        
+}
+
+/*findPwResult*/
+
+#member > .findPwResult {
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+}
+#member > .findPwResult > nav {
+    border-bottom: 2px solid #0e6ad3;
+}
+#member > .findPwResult > nav > h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+#member > .findPwResult > nav > p {
+    float: right;
+    font-size: 11px;
+    margin-top: -20px;
+    color: #888;
+}
+#member > .findPwResult > nav > p > strong {
+    font-weight: bold;
+}
+
+#member > .findPwResult table {
+    position: relative;
+    width: 100%;
+    table-layout: fixed;
+    border-top: 1px solid #b6bdc7;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#member > .findPwResult table caption {
+    text-align: left;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+#member > .findPwResult table th {
+    width: 200px;
+    padding: 20px 20px;
+    vertical-align: top;
+    background: #f4f6f9;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.4;
+    border-bottom: 1px solid #dfe5ed;
+    word-break: break-word;
+    font-size: 14px;
+}
+
+#member > .findPwResult table td {
+    position: relative;
+    vertical-align: middle;
+    padding: 10px 20px;
+    text-align: left;
+    line-height: 1.4;
+    border-bottom: 1px solid #dfe5ed;
+    word-break: break-word;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#member > .findPwResult .btns {
+    padding: 40px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+#member > .findPwResult .btnCancel{
+    background: #0E6AD3;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 72px;
+    margin: 40px auto;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    cursor: pointer;        
+}
+#member > .findPwResult .btnNext{
+    background: #0E6AD3;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 72px;
+    margin: 40px auto;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    cursor: pointer;        
+}
+
+#member > .findPwResult form input[type="password"]{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #e4eaec;
+    background: #f7f7f7;
+    text-indent: 6px;
+}
